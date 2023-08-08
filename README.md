@@ -1,10 +1,27 @@
-## How to run the application using Docker
 
-1. Run `mvn clean package -DskipTests` to build the applications and create the docker image locally.
-2. Run `docker-compose up -d` to start the applications.
+# Micro-Services OG
 
-## How to run the application without Docker
+A Project that demonstrates the whole architecture of Micro-Services..
+## Run Locally
 
-1. Run `mvn clean verify -DskipTests` by going inside each folder to build the applications.
-2. After that run `mvn spring-boot:run` by going inside each folder to start the applications.
+Clone the project
 
+```bash
+  git clone https://github.com/calto16/spring-boot-microservices.git
+```
+
+Go to the project directory
+
+```bash
+  cd spring-boot-microservices
+```
+
+
+
+Start all the services
+
+```bash
+  docker compose up -d
+```
+
+Make Sure that you have correctly configured the required images and the Ports where the services are going to start in your docker-compose.yml file.
